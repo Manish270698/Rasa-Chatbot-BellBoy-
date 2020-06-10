@@ -1,0 +1,102 @@
+intents:
+  - greet: {triggers: action_greet}
+  - goodbye: {triggers: action_bye}
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - book_room
+  - request_room_cleaning
+  - faq
+  - simple
+  - deluxe
+  - number_of_rooms
+  - confirm
+  - cleaning_time
+  - out_of_scope
+  - thanks: {triggers: action_thanks}
+
+entities:
+- facility_type
+- number
+- time
+- room_type
+- service
+
+actions:
+  - respond_faq
+  - action_greet
+  - action_thanks
+  - action_bye
+
+slots:
+  room_type:
+    type: unfeaturized
+  number:
+    type: unfeaturized
+  time:
+    type: unfeaturized
+
+forms:
+  - room_booking_form
+  - room_clean_form
+
+templates:
+  utter_noworries:
+  - text: "My pleasure."
+  - text: "You are welcome!"
+
+  utter_greet:
+  - text: "Hi. What are you looking for?"
+  - text: "Hello! How can I help you today?"
+
+  utter_ask_number:
+  - text: "How many rooms would you like to book?"
+  - text: "How many rooms should i book for you?"
+
+  utter_room_confirm:
+  - text: " I have confirmed your booking."
+  - text: "Your booking has been confirmed."
+
+  utter_ask_room_type:
+  - text: "Select the type of room you want:"
+    buttons:
+      - title: "Simple"
+        payload: '/simple{"room_type":"simple"}'
+      - title: "Deluxe"
+        payload: '/deluxe{"room_type":"deluxe"}'
+
+  utter_slot_values:
+    - text: "You want {number} {room_type} room. Is it correct?"
+
+  utter_ask_time:
+  - text: "When should I arrange for cleaning?"
+
+  utter_room_clean:
+  - text: "{time}.OK! Your request is being processed."
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Talk to you later!"
+  - text: "Have a good day."
+  - text: "Until next time!"
+
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_out_of_scope:
+  - Sorry, I can't help you.
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
