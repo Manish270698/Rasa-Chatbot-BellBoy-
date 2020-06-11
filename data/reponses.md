@@ -8,7 +8,7 @@
 
 ## faq_cancel_reservation
 * faq/cancel
-  - On the Reservations page, under the heading ‘View, Change or Cancel a Reservation,’ enter your confirmation number, and either the last name on the reservation or the last four digits of the credit card used to make the reservation.
+  - To cancel a reservation, select the "Reservations" link from the homepage. On the Reservations page, under the heading ‘View, Change or Cancel a Reservation,’ enter your confirmation number, and either the last name on the reservation or the last four digits of the credit card used to make the reservation.
 
 ## faq_cancellation_policy
 * faq/cancel_policy
