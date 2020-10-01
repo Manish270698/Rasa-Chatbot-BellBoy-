@@ -24,7 +24,7 @@
 
 ## faq_breakfast_time
 * faq/breakfast_timings
-  - Monday through Friday breakfast is 6 am to 9 am. On Saturday and Sunday, we are open from 7 am to 10:30 am.
+  - From Monday to Friday breakfast is 6 am to 9 am. On Saturday and Sunday, we are open from 7 am to 10:30 am.
 
 ## faq_restaurant_time
 * faq/restaurant_timings
